@@ -1,0 +1,299 @@
+{"app_name":"com.apple.WebKit.WebContent","timestamp":"2020-03-20 12:20:47.71 +0000","app_version":"8608","slice_uuid":"EC0AA5F9-2931-3785-AF2C-BEBCB586B0CE","build_version":"8608.5.11","bundleID":"com.apple.WebKit.WebContent","share_with_app_devs":false,"is_first_party":true,"bug_type":"142","os_version":"iPhone OS 13.3.1 (17D50)","incident_id":"20AF58D8-97EB-4CA2-B30D-6BA9EB0E0231","name":"com.apple.WebKit.WebContent"}
+Date/Time:        2020-03-20 12:17:42 +0000
+End time:         2020-03-20 12:20:47 +0000
+OS Version:       iPhone OS 13.3.1 (Build 17D50)
+Architecture:     arm64e
+Report Version:   29
+Incident Identifier: 20AF58D8-97EB-4CA2-B30D-6BA9EB0E0231
+
+Data Source:      Microstackshots
+Shared Cache:     0x16730000 848E225F-0906-300D-B925-D7A2CF224D9D
+
+Command:          com.apple.WebKit.WebContent
+Path:             /System/Library/Frameworks/WebKit.framework/XPCServices/com.apple.WebKit.WebContent.xpc/com.apple.WebKit.WebContent
+Identifier:       com.apple.WebKit.WebContent
+Version:          8608 (8608.5.11)
+PID:              1650
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45001 wakeups over the last 185 seconds (244 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45001
+Wakeups duration: 185s
+Duration:         184.76s
+Duration Sampled: 183.58s
+Steps:            26
+
+Hardware model:   iPhone12,5
+Active cpus:      6
+
+
+Heaviest stack for the target process:
+  8  ??? (libsystem_pthread.dylib + 6208) [0x19689d840]
+  6  ??? (libwebrtc.dylib + 1513600) [0x1ca798880]
+  6  ??? (libwebrtc.dylib + 1574680) [0x1ca7a7718]
+  6  ??? (libwebrtc.dylib + 628140) [0x1ca6c05ac]
+  6  ??? (libsystem_kernel.dylib + 154828) [0x19697eccc]
+
+
+Powerstats for:   com.apple.WebKit.WebContent [1650]
+Bundle ID:        com.apple.WebKit.WebContent
+Adam ID:          0
+Is first party:   Yes
+App version:      None
+Build version:    None
+Is Beta:          No
+Share with Devs:  No
+UUID:             EC0AA5F9-2931-3785-AF2C-BEBCB586B0CE
+Path:             /System/Library/Frameworks/WebKit.framework/XPCServices/com.apple.WebKit.WebContent.xpc/com.apple.WebKit.WebContent
+Architecture:     arm64
+Footprint:        225.56 MB -> 366.09 MB (+140.53 MB) (max 387.73 MB )
+Pageins:          248 pages
+Start time:       2020-03-20 12:18:25 +0000
+End time:         2020-03-20 12:20:43 +0000
+Num samples:      18 (69%)
+CPU Time:         20.959s
+Primary state:    9 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 18 samples Active
+Power Source:     18 samples on Battery, 0 samples on AC
+  8   ??? (libsystem_pthread.dylib + 6208) [0x19689d840]
+    6   ??? (libwebrtc.dylib + 1513600) [0x1ca798880]
+      6   ??? (libwebrtc.dylib + 1574680) [0x1ca7a7718]
+        6   ??? (libwebrtc.dylib + 628140) [0x1ca6c05ac]
+          6   ??? (libsystem_kernel.dylib + 154828) [0x19697eccc]
+    1   ??? (JavaScriptCore + 589340) [0x1a5d73e1c]
+      1   ??? (JavaScriptCore + 584408) [0x1a5d72ad8]
+        1   ??? (JavaScriptCore + 585288) [0x1a5d72e48]
+          1   ??? (JavaScriptCore + 589992) [0x1a5d740a8]
+            1   ??? (libc++.1.dylib + 60832) [0x1969d3da0]
+              1   ??? (libsystem_kernel.dylib + 154828) [0x19697eccc]
+                1   <Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+    1   ??? (JavaScriptCore + 320932) [0x1a5d325a4]
+      1   ??? (JavaScriptCore + 313944) [0x1a5d30a58]
+        1   ??? (JavaScriptCore + 46380) [0x1a5cef52c]
+          1   ??? (JavaScriptCore + 211600) [0x1a5d17a90]
+            1   ??? (JavaScriptCore + 208816) [0x1a5d16fb0]
+              1   ??? (JavaScriptCore + 7465836) [0x1a6402b6c]
+                1   ??? (JavaScriptCore + 7590964) [0x1a6421434]
+                  1   ??? (JavaScriptCore + 7589508) [0x1a6420e84]
+                    1   ??? (JavaScriptCore + 7601084) [0x1a6423bbc]
+                      1   ??? (JavaScriptCore + 10991872) [0x1a675f900]
+                        1   <User mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+  5   ??? (libdyld.dylib + 3608) [0x196988e18]
+    5   ??? (WebKit + 1602460) [0x19e41039c]
+      5   ??? (libxpc.dylib + 99408) [0x19679b450]
+        5   ??? (libxpc.dylib + 88592) [0x196798a10]
+          5   ??? (Foundation + 275600) [0x196e8a490]
+            5   ??? (Foundation + 33600) [0x196e4f340]
+              5   ??? (CoreFoundation + 687936) [0x196b09f40]
+                3   ??? (CoreFoundation + 690640) [0x196b0a9d0]
+                  3   ??? (CoreFoundation + 711464) [0x196b0fb28]
+                    3   ??? (CoreFoundation + 713908) [0x196b104b4]
+                      3   ??? (CoreFoundation + 714620) [0x196b1077c]
+                        3   ??? (WebCore + 21387004) [0x19fd0e6fc]
+                          3   ??? (WebCore + 21156960) [0x19fcd6460]
+                            3   ??? (WebCore + 21242448) [0x19fceb250]
+                              1   ??? (WebCore + 20131332) [0x19fbdbe04]
+                                1   ??? (WebCore + 13108256) [0x19f529420]
+                                  1   ??? (WebCore + 13109180) [0x19f5297bc]
+                                    1   ??? (WebCore + 12903496) [0x19f4f7448]
+                                      1   ??? (JavaScriptCore + 10369820) [0x1a66c7b1c]
+                                        1   ??? (JavaScriptCore + 8217548) [0x1a64ba3cc]
+                                          1   ??? (JavaScriptCore + 2343476) [0x1a5f20234]
+                                            1   ??? [0xc866a4758]
+                                              1   ??? (JavaScriptCore + 2476588) [0x1a5f40a2c]
+                                                1   ??? (JavaScriptCore + 2480852) [0x1a5f41ad4]
+                                                  1   ??? (JavaScriptCore + 2476588) [0x1a5f40a2c]
+                                                    1   ??? (JavaScriptCore + 2476588) [0x1a5f40a2c]
+                                                      1   ??? [0xc862a2cf4]
+                                                        1   ??? (JavaScriptCore + 2480672) [0x1a5f41a20]
+                                                          1   ??? (JavaScriptCore + 2476588) [0x1a5f40a2c]
+                                                            1   ??? (JavaScriptCore + 2476588) [0x1a5f40a2c]
+                                                              1   ??? (JavaScriptCore + 2476588) [0x1a5f40a2c]
+                                                                1   ??? (JavaScriptCore + 2476588) [0x1a5f40a2c]
+                                                                  1   ??? (JavaScriptCore + 2476588) [0x1a5f40a2c]
+                                                                    1   ??? (JavaScriptCore + 2476408) [0x1a5f40978]
+                                                                      1   ??? (JavaScriptCore + 2476408) [0x1a5f40978]
+                                                                        1   ??? [0xc85d305e0]
+                                                                          1   <User mode, Effective Thread QoS User Initiated, Requested Thread QoS User Interactive>
+                              1   ??? (WebCore + 20131032) [0x19fbdbcd8]
+                                1   ??? (WebCore + 13108256) [0x19f529420]
+                                  1   ??? (WebCore + 13109180) [0x19f5297bc]
+                                    1   ??? (WebCore + 12903496) [0x19f4f7448]
+                                      1   ??? (JavaScriptCore + 10369820) [0x1a66c7b1c]
+                                        1   ??? (JavaScriptCore + 8217548) [0x1a64ba3cc]
+                                          1   ??? (JavaScriptCore + 2343476) [0x1a5f20234]
+                                            1   ??? (JavaScriptCore + 2476408) [0x1a5f40978]
+                                              1   ??? (JavaScriptCore + 2476408) [0x1a5f40978]
+                                                1   ??? [0xc85d30238]
+                                                  1   ??? (JavaScriptCore + 10268540) [0x1a66aef7c]
+                                                    1   <User mode, Effective Thread QoS User Initiated, Requested Thread QoS User Interactive>
+                              1   ??? (WebCore + 348608) [0x19e8fe1c0]
+                                1   ??? (WebCore + 16101800) [0x19f8041a8]
+                                  1   ??? (WebCore + 16067944) [0x19f7fbd68]
+                                    1   <User mode, Effective Thread QoS User Initiated, Requested Thread QoS User Interactive>
+                1   ??? (CoreFoundation + 690436) [0x196b0a904]
+                  1   ??? (libsystem_kernel.dylib + 15280) [0x19695cbb0]
+                    1   <User mode, Effective Thread QoS User Initiated, Requested Thread QoS User Interactive>
+                1   ??? (CoreFoundation + 690276) [0x196b0a864]
+                  1   ??? (libsystem_pthread.dylib + 26584) [0x1968a27d8]
+                    1   ??? (libsystem_kernel.dylib + 154908) [0x19697ed1c]
+                      1   <Effective Thread QoS User Initiated, Requested Thread QoS User Interactive>
+  4   ??? (libsystem_pthread.dylib + 39392) [0x1968a59e0]
+    1   <User mode>
+  1   ??? (libsystem_pthread.dylib + 14032) [0x19689f6d0]
+    1   ??? (libdispatch.dylib + 77600) [0x196849f20]
+      1   ??? (libdispatch.dylib + 40572) [0x196840e7c]
+        1   ??? (libdispatch.dylib + 37968) [0x196840450]
+          1   ??? (libdispatch.dylib + 12248) [0x196839fd8]
+            1   ??? (libdispatch.dylib + 7036) [0x196838b7c]
+              1   ??? (JavaScriptCore + 509792) [0x1a5d60760]
+                1   ??? (WebKit + 230204) [0x19e2c133c]
+                  1   ??? (WebKit + 778176) [0x19e346fc0]
+                    1   <User mode>
+
+  Binary Images:
+           0x1024e4000 -                ???  com.apple.WebKit.WebContent 8608 (8608.5.11) <EC0AA5F9-2931-3785-AF2C-BEBCB586B0CE>  /System/Library/Frameworks/WebKit.framework/XPCServices/com.apple.WebKit.WebContent.xpc/com.apple.WebKit.WebContent
+           0x196783000 -        0x1967b6fff  libxpc.dylib                                 <E2894301-267B-3872-A3CD-0AAF659353A9>  /usr/lib/system/libxpc.dylib
+           0x196837000 -        0x196873fff  libdispatch.dylib                            <0C7A69CD-F2EE-3426-BFD8-742C903D3D07>  /usr/lib/system/libdispatch.dylib
+           0x19689c000 -        0x1968a6fff  libsystem_pthread.dylib                      <637416F6-A7A3-339B-96ED-9EBC80D38988>  /usr/lib/system/libsystem_pthread.dylib
+           0x196959000 -        0x196987fff  libsystem_kernel.dylib                       <AE36DCE0-999D-3990-9EED-01106F17DC90>  /usr/lib/system/libsystem_kernel.dylib
+           0x196988000 -        0x1969bbfff  libdyld.dylib                                <9D122047-19B7-36A2-A892-27401F9E0E6C>  /usr/lib/system/libdyld.dylib
+           0x1969c5000 -        0x196a1ffff  libc++.1.dylib                               <FFF3D40D-85A0-308E-AC32-908BCA1188D0>  /usr/lib/libc++.1.dylib
+           0x196a62000 -        0x196ddffff  CoreFoundation                               <DC2C95C6-B954-39E8-86A2-5E0AF8801E87>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x196e47000 -        0x197112fff  Foundation                                   <7A7A96AF-79E4-3DB1-8904-42E61CAE8999>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x19e289000 -        0x19e8a8fff  WebKit                                       <D74E8E63-B963-3844-9CA0-8A3A0F5FAE4C>  /System/Library/Frameworks/WebKit.framework/WebKit
+           0x19e8a9000 -        0x1a05c5fff  WebCore                                      <CA426A2F-5481-34AC-AF0A-08332C0A84E0>  /System/Library/PrivateFrameworks/WebCore.framework/WebCore
+           0x1a5ce4000 -        0x1a6adefff  JavaScriptCore                               <C487262F-3EDB-302A-B315-3576E2D08B43>  /System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore
+           0x1ca627000 -        0x1cab23fff  libwebrtc.dylib                              <7AFDF5C5-4B40-37BE-8F73-C4D0E9BA1B05>  /System/Library/PrivateFrameworks/WebCore.framework/Frameworks/libwebrtc.dylib
+
+
+Powerstats for:   backboardd
+UUID:             82B160C5-4394-34AB-9EEA-E4E6916E7458
+Path:             /usr/libexec/backboardd
+Architecture:     arm64
+Start time:       2020-03-20 12:20:29 +0000
+End time:         2020-03-20 12:20:45 +0000
+Num samples:      3 (12%)
+Primary state:    2 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Unspecified, Requested Thread QoS Unspecified, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 3 samples Active
+Power Source:     3 samples on Battery, 0 samples on AC
+  3  ??? (libsystem_pthread.dylib + 6208) [0x19689d840]
+    3  ??? (QuartzCore + 1808860) [0x19d7c19dc]
+      3  ??? (QuartzCore + 1755940) [0x19d7b4b24]
+        3  ??? (CoreFoundation + 691312) [0x196b0ac70]
+          3  ??? (CoreFoundation + 687936) [0x196b09f40]
+            3  ??? (CoreFoundation + 690888) [0x196b0aac8]
+              3  ??? (CoreFoundation + 712336) [0x196b0fe90]
+                3  ??? (CoreFoundation + 714692) [0x196b107c4]
+                  3  ??? (CoreFoundation + 540076) [0x196ae5dac]
+                    3  ??? (QuartzCore + 919048) [0x19d6e8608]
+                      2  ??? (QuartzCore + 1757124) [0x19d7b4fc4]
+                        1  ??? (QuartzCore + 1698676) [0x19d7a6b74]
+                          1  ??? (QuartzCore + 686492) [0x19d6af99c]
+                            1  ??? (QuartzCore + 664428) [0x19d6aa36c]
+                              1  ??? (QuartzCore + 664428) [0x19d6aa36c]
+                                1  ??? (QuartzCore + 664428) [0x19d6aa36c]
+                                  1  ??? (QuartzCore + 664428) [0x19d6aa36c]
+                                    1  ??? (QuartzCore + 664428) [0x19d6aa36c]
+                                      1  ??? (QuartzCore + 664428) [0x19d6aa36c]
+                                        1  ??? (QuartzCore + 664428) [0x19d6aa36c]
+                                          1  ??? (QuartzCore + 664428) [0x19d6aa36c]
+                                            1  ??? (QuartzCore + 664428) [0x19d6aa36c]
+                                              1  ??? (QuartzCore + 664428) [0x19d6aa36c]
+                                                1  ??? (QuartzCore + 664428) [0x19d6aa36c]
+                                                  1  ??? (QuartzCore + 664428) [0x19d6aa36c]
+                                                    1  ??? (QuartzCore + 664428) [0x19d6aa36c]
+                                                      1  ??? (QuartzCore + 664428) [0x19d6aa36c]
+                                                        1  ??? (QuartzCore + 664428) [0x19d6aa36c]
+                                                          1  ??? (QuartzCore + 664428) [0x19d6aa36c]
+                                                            1  ??? (QuartzCore + 664428) [0x19d6aa36c]
+                                                              1  ??? (QuartzCore + 664428) [0x19d6aa36c]
+                                                                1  ??? (QuartzCore + 664428) [0x19d6aa36c]
+                                                                  1  ??? (QuartzCore + 664428) [0x19d6aa36c]
+                                                                    1  ??? (QuartzCore + 658420) [0x19d6a8bf4]
+                        1  ??? (QuartzCore + 1697448) [0x19d7a66a8]
+                          1  ??? (QuartzCore + 2032932) [0x19d7f8524]
+                            1  ??? (QuartzCore + 1998400) [0x19d7efe40]
+                              1  ??? (IOMobileFramebuffer + 4404) [0x1a6e0b134]
+                                1  ??? (IOMobileFramebuffer + 15904) [0x1a6e0de20]
+                                  1  ??? (IOKit + 30608) [0x197b0b790]
+                                    1  ??? (IOKit + 515708) [0x197b81e7c]
+                                      1  ??? (libsystem_kernel.dylib + 15364) [0x19695cc04]
+                                        1  <Kernel mode>
+                      1  ??? (libsystem_pthread.dylib + 27476) [0x1968a2b54]
+
+  Binary Images:
+           0x104568000 -                ???  backboardd              <82B160C5-4394-34AB-9EEA-E4E6916E7458>  /usr/libexec/backboardd
+           0x19689c000 -        0x1968a6fff  libsystem_pthread.dylib <637416F6-A7A3-339B-96ED-9EBC80D38988>  /usr/lib/system/libsystem_pthread.dylib
+           0x196959000 -        0x196987fff  libsystem_kernel.dylib  <AE36DCE0-999D-3990-9EED-01106F17DC90>  /usr/lib/system/libsystem_kernel.dylib
+           0x196a62000 -        0x196ddffff  CoreFoundation          <DC2C95C6-B954-39E8-86A2-5E0AF8801E87>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x197b04000 -        0x197baafff  IOKit                   <667B9F46-ECD9-36BF-A2D3-CAEDCB32A283>  /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+           0x19d608000 -        0x19d85ffff  QuartzCore              <4DA865CA-7F36-3D7F-952E-05A9E5ED505D>  /System/Library/Frameworks/QuartzCore.framework/QuartzCore
+           0x1a6e0a000 -        0x1a6e13fff  IOMobileFramebuffer     <6D3BE747-1028-3533-AFED-3B93EBFA73E0>  /System/Library/PrivateFrameworks/IOMobileFramebuffer.framework/IOMobileFramebuffer
+
+
+Powerstats for:   com.apple.WebKit
+UUID:             D3B0EF9F-CD99-3506-A21D-CFE8E8DA79FD
+Architecture:     arm64
+Start time:       2020-03-20 12:17:43 +0000
+End time:         2020-03-20 12:20:46 +0000
+Num samples:      3 (12%)
+Primary state:    2 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 3 samples Active
+Power Source:     3 samples on Battery, 0 samples on AC
+  2  ??? (libsystem_pthread.dylib + 14032) [0x19689f6d0]
+    2  ??? (libdispatch.dylib + 77600) [0x196849f20]
+      2  ??? (libdispatch.dylib + 43756) [0x196841aec]
+        2  ??? (libdispatch.dylib + 45008) [0x196841fd0]
+          1  ??? (libdispatch.dylib + 88260) [0x19684c8c4]
+            1  ??? (libdispatch.dylib + 89880) [0x19684cf18]
+              1  ??? (libdispatch.dylib + 22360) [0x19683c758]
+                1  ??? (libdispatch.dylib + 12248) [0x196839fd8]
+                  1  ??? (libnetwork.dylib + 2005760) [0x198fe9b00]
+                    1  ??? (libnetwork.dylib + 2007792) [0x198fea2f0]
+                      1  ??? (libnetwork.dylib + 2012396) [0x198feb4ec]
+                        1  ??? (libnetwork.dylib + 1082548) [0x198f084b4]
+                          1  ??? (libusrtcp.dylib + 131492) [0x19bf2e1a4]
+                            1  ??? (libusrtcp.dylib + 106200) [0x19bf27ed8]
+                              1  ??? (libboringssl.dylib + 71612) [0x19badb7bc]
+                                1  ??? (libboringssl.dylib + 70588) [0x19badb3bc]
+                                  1  ??? (libboringssl.dylib + 66900) [0x19bada554]
+                                    1  ??? (libboringssl.dylib + 35620) [0x19bad2b24]
+                                      1  ??? (libboringssl.dylib + 348148) [0x19bb1eff4]
+                                        1  ??? (libboringssl.dylib + 525904) [0x19bb4a650]
+                                          1  ??? (libboringssl.dylib + 484892) [0x19bb4061c]
+                                            1  ??? (libboringssl.dylib + 255188) [0x19bb084d4]
+                                              1  ??? (libboringssl.dylib + 523720) [0x19bb49dc8]
+                                                1  ??? (libboringssl.dylib + 426068) [0x19bb32054]
+                                                  1  ??? (libboringssl.dylib + 33828) [0x19bad2424]
+                                                    1  ??? (libnetwork.dylib + 2458736) [0x199058470]
+                                                      1  ??? (libboringssl.dylib + 43156) [0x19bad4894]
+                                                        1  ??? (Security + 229892) [0x1979fb204]
+                                                          1  ??? (libobjc.A.dylib + 136200) [0x1968c8408]
+                                                            1  ??? (libobjc.A.dylib + 9056) [0x1968a9360]
+                                                              1  ??? (libobjc.A.dylib + 83964) [0x1968bb7fc]
+                                                                1  ??? (libobjc.A.dylib + 16724) [0x1968ab154]
+          1  ??? (libdispatch.dylib + 40628) [0x196840eb4]
+            1  ??? (libdispatch.dylib + 37968) [0x196840450]
+              1  ??? (libdispatch.dylib + 12248) [0x196839fd8]
+                1  ??? (libsystem_malloc.dylib + 65940) [0x196884194]
+                  1  ??? (libsystem_malloc.dylib + 75424) [0x1968866a0]
+                    1  ??? (libsystem_malloc.dylib + 102552) [0x19688d098]
+                      1  ??? (libsystem_malloc.dylib + 97392) [0x19688bc70]
+                        1  ??? (libsystem_malloc.dylib + 93960) [0x19688af08]
+  1  ??? (libsystem_pthread.dylib + 39392) [0x1968a59e0]
+    1  <Kernel mode>
+
+  Binary Images:
+           0x102710000 -                ???  ???                     <D3B0EF9F-CD99-3506-A21D-CFE8E8DA79FD>
+           0x196837000 -        0x196873fff  libdispatch.dylib       <0C7A69CD-F2EE-3426-BFD8-742C903D3D07>  /usr/lib/system/libdispatch.dylib
+           0x196874000 -        0x196894fff  libsystem_malloc.dylib  <479F1B02-25EE-32CE-8C0A-FAF20CD9E0C6>  /usr/lib/system/libsystem_malloc.dylib
+           0x19689c000 -        0x1968a6fff  libsystem_pthread.dylib <637416F6-A7A3-339B-96ED-9EBC80D38988>  /usr/lib/system/libsystem_pthread.dylib
+           0x1968a7000 -        0x1968d7fff  libobjc.A.dylib         <2C18C54E-6C84-310C-851F-F9602890D908>  /usr/lib/libobjc.A.dylib
+           0x1979c3000 -        0x197b03fff  Security                <98DBC2A2-27AA-3095-A418-269882FD49C0>  /System/Library/Frameworks/Security.framework/Security
+           0x198e00000 -        0x1992dafff  libnetwork.dylib        <6ECB1697-49EC-30CB-980F-63831F8412AD>  /usr/lib/libnetwork.dylib
+           0x19baca000 -        0x19bb81fff  libboringssl.dylib      <B6F68C38-F67A-37DA-8252-C84EF1C98E43>  /usr/lib/libboringssl.dylib
+           0x19bf0e000 -        0x19bf6afff  libusrtcp.dylib         <D7B20ED0-02A1-353C-ACDD-504EA06BEDF4>  /usr/lib/libusrtcp.dylib
